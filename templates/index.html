@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="/calorie_calculator" method="post">
+
+        <p>select your gender</p>
+        <input type="radio" name="gender" value="m" id="Male">Male
+        <input type="radio" name="gender" value="f" id="Female">Female
+
+
+        <p> Enter your height</p>
+        <input type="number" name="height">
+
+        <p>Enter your weight </p>
+        <input type="number" name="weight">
+
+        <p>Enter your age </p>
+        <input type="number" name="age">
+
+
+        <input type="submit" >
+        <p> So your maintainence calories are {{result}}</p>
+    </form>
+
+
+</body>
+</html>
