@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ired<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,23 +10,23 @@
     <form action="/calorie_calculator" method="post">
 
         <p>select your gender</p>
-        <input type="radio" name="gender" value="m" id="Male">Male
-        <input type="radio" name="gender" value="f" id="Female">Female
+        <input type="radio" name="gender" value="m" id="Male" required>Male
+        <input type="radio" name="gender" value="f" id="Female" required>Female
 
 
         <p> Enter your height</p>
-        <input type="number" name="height">
+        <input type="number" name="height" required>
 
         <p>Enter your weight </p>
         <input type="number" name="weight">
-        <select id="w_unit" name="weight" required>
+        <select id="Weight_unit" name="w_unit" required>
             <option value="Kg">Kg</option>
             <option value="Lb">Lbs</option>
         </select>
         <br>
 
         <p>Enter your age </p>
-        <input type="number" name="age">
+        <input type="number" name="age" required>
 
 
         <input type="submit" >
