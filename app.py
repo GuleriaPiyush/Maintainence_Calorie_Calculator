@@ -19,6 +19,11 @@ def calculateBmr():
     weight = float(request.form['weight'])
     height = float(request.form['height'])
 
+    if w_unit=='Kg':
+        weight=weight*2.2
+    else:
+        weight=weight*1
+
 
 
     if gender.lower()=='m':
