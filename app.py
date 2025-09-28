@@ -20,10 +20,12 @@ def calculateBmr():
     height = float(request.form['height'])
     w_unit = request.form['w_unit']
 
-    if w_unit=='Lb':
-        weight=weight*2.2
-    else:
+    if w_unit=='Kg':
         weight=weight*1
+    elif w_unit=='Lb':
+        weight=weight*0.453592
+    else:
+        print("wrong value selected")
 
 
 
