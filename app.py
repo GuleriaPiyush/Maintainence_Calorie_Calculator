@@ -18,8 +18,9 @@ def calculateBmr():
     age = float(request.form['age'])
     weight = float(request.form['weight'])
     height = float(request.form['height'])
+    w_unit = request.form['w_unit']
 
-    if w_unit=='Kg':
+    if w_unit=='Lb':
         weight=weight*2.2
     else:
         weight=weight*1
